@@ -176,6 +176,7 @@ with tab1:
                 PID = add_user(name, email, hash_pass(password), d_b)
                 st.write("NOTE YOUR PID: ")
                 st.write(PID)
+                time.sleep(10)
                 st.rerun()
 
     with tab2:
