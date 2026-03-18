@@ -18,9 +18,9 @@ xray_img = BASE_DIR / "images" / "xray_diagram.jpg"
 with center1:
     st.image(str(heart_img), use_column_width=True)
     if st.button("Heart Disease", use_container_width=True):
-        st.switch_page("pages/page1.py")
+        st.switch_page("page1.py")
 
 with center2:
     st.image(str(xray_img), use_column_width=True)
     if st.button("Xray", use_container_width=True):
-        st.switch_page("pages/page2.py")
+        st.switch_page("page2.py")
