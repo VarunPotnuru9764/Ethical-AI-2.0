@@ -2,7 +2,7 @@ import streamlit as st
 import requests
 import json
 
-if "logged_in_user" not in st.session_state or not st.session_state.logged_in:
+if "logged_in" not in st.session_state or not st.session_state.logged_in:
     st.warning("Please log in first!")
     st.switch_page("app.py") 
     st.stop()
