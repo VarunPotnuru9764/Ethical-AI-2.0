@@ -4,7 +4,7 @@ import json
 
 if "logged_in_user" not in st.session_state or not st.session_state.logged_in:
     st.warning("Please log in first!")
-    st.switch_page("../app.py") 
+    st.switch_page("app.py") 
     st.stop()
     
 st.sidebar.write(f"Logged in as: {st.session_state['logged_in_user']}")
