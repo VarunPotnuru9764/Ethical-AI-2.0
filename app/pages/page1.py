@@ -9,7 +9,7 @@ if "logged_in" not in st.session_state or not st.session_state.logged_in:
     
 st.sidebar.write(f"Logged in as: {st.session_state['logged_in']}")
 if st.sidebar.button("Log Out"):
-    del st.session_state["logged_in_user"]
+    del st.session_state["logged_in"]
     st.switch_page("app.py")
 st.title("Model Operations Dashboard")
 
